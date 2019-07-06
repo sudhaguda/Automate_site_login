@@ -1,15 +1,6 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from time import sleep
-import sys
 from getpass import getpass
-
-def printUse():
-    print("Usage: python automateLogin.py -[fb/gmail]")
-    print("Eg: python automateLogin.py -fb")
-    print("Eg: python automateLogin.py -gmail")
-    print(len(sys.argv))
-
 
 email = input("Enter Email: ")
 psd = getpass("Enter Password: ")
